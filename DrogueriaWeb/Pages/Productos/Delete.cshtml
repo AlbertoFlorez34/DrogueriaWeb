@@ -1,0 +1,13 @@
+﻿@page "{id:int}"
+@model DrogueriaWeb.Pages.Productos.DeleteModel
+
+<h2>Eliminar Producto</h2>
+
+<p>¿Seguro que quieres eliminar este producto?</p>
+
+<p><strong>@Model.Producto.Nombre</strong></p>
+
+<form method="post">
+    <button type="submit">Sí, eliminar</button>
+    <a asp-page="Index">Cancelar</a>
+</form>
