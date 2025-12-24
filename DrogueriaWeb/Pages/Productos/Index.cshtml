@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+
+<h2>Productos</h2>
+
+<a asp-page="Create">Nuevo producto</a>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Stock</th>
+    </tr>
+
+    @foreach (var p in Model.Productos)
+    {
+        <tr>
+            <td>@p.Nombre</td>
+            <td>@p.Precio</td>
+            <td>@p.Stock</td>
+        </tr>
+    }
+</table>
